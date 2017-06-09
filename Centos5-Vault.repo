@@ -1,0 +1,36 @@
+#CentOS Vault contains rpms from older releases in the CentOS-5 tree.
+
+[vault-base]
+name=CentOS-RELEASE - Base
+baseurl=http://vault.centos.org/RELEASE/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+enabled=1
+
+[vault-updates]
+name=CentOS-RELEASE - Updates
+baseurl=http://vault.centos.org/RELEASE/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+enabled=1
+
+[vault-extras]
+name=CentOS-RELEASE - Extras
+baseurl=http://vault.centos.org/RELEASE/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+enabled=1
+
+[vault-centosplus]
+name=CentOS-RELEASE - CentOSPlus
+baseurl=http://vault.centos.org/RELEASE/centosplus/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+enabled=1
+
+[vault-fasttrack]
+name=CentOS-RELEASE - FastTrack
+baseurl=http://vault.centos.org/RELEASE/fasttrack/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-5
+enabled=1
